@@ -5,7 +5,7 @@
 ## 📖 1. Title
 **Hybrid Anomaly Detection for Predictive Maintenance in Turbofan Engines.**
 
-## ⚠️ 2. Problem Statement
+##  2. Problem Statement
 In industrial IoT, equipment failure leads to costly unplanned downtime. The objective of this project is to predict impending equipment failure before it happens by analyzing multi-variate time-series sensor data (e.g., temperature, pressure, vibration). By identifying anomalies in the sensor data early, maintenance can be scheduled proactively, saving time and resources.
 
 ## 🧠 3. Methodology
@@ -31,3 +31,5 @@ The data used is the NASA CMAPSS (Commercial Modular Aero-Propulsion System Simu
 ```bash
 git clone https://github.com/Atharva-Ramawat/Industrial-IOT-Anomaly-Detection.git
 cd Industrial-IOT-Anomaly-Detection
+
+
