@@ -1,6 +1,8 @@
 # 🏭 Hybrid Anomaly Detection in Industrial IoT using Deep Learning
 
-**Video Explanation:** [Link to your 8-10 Min Video will go here]
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## 📖 1. Title
 **Hybrid Anomaly Detection for Predictive Maintenance in Turbofan Engines.**
@@ -28,30 +30,22 @@ The data used is the NASA CMAPSS (Commercial Modular Aero-Propulsion System Simu
 ## 🚀 6. How to Run
 
 **1. Clone the repository:**
-```bash
-git clone [https://github.com/Atharva-Ramawat/Industrial-IOT-Anomaly-Detection.git](https://github.com/Atharva-Ramawat/Industrial-IOT-Anomaly-Detection.git)
-cd Industrial-IOT-Anomaly-Detection
-```
+`git clone https://github.com/Atharva-Ramawat/Industrial-IOT-Anomaly-Detection.git`
+`cd Industrial-IOT-Anomaly-Detection`
 
 **2. Set up the Python 3.11 Virtual Environment:**
-```bash
-py -3.11 -m venv venv
-.\venv\Scripts\activate
-pip install -r requirements.txt
-```
+`py -3.11 -m venv venv`
+`.\venv\Scripts\activate`
+`pip install -r requirements.txt`
 
 **3. Train the Model:**
 *(Ensure your NASA data text files are placed in the `data/` folder first)*
-```bash
-python src/train.py
-```
+`python src/train.py`
 
 **4. Run Predictions & Visualize Anomalies:**
-```bash
-python src/predict.py
-```
+`python src/predict.py`
 
-## 🔮 7. Future Work & Next Steps
+## 🔮 6. Future Work & Next Steps
 While the current LSTM Autoencoder successfully identifies engine degradation, this project can be expanded into a full-scale production system through the following enhancements:
 
 * **Real-Time IoT Simulation:** Implement Apache Kafka or a continuous Python generator to stream the test dataset sequentially, simulating a live factory floor environment.
