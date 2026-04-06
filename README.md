@@ -5,7 +5,7 @@
 ## 📖 1. Title
 **Hybrid Anomaly Detection for Predictive Maintenance in Turbofan Engines.**
 
-##  2. Problem Statement
+## ⚠️ 2. Problem Statement
 In industrial IoT, equipment failure leads to costly unplanned downtime. The objective of this project is to predict impending equipment failure before it happens by analyzing multi-variate time-series sensor data (e.g., temperature, pressure, vibration). By identifying anomalies in the sensor data early, maintenance can be scheduled proactively, saving time and resources.
 
 ## 🧠 3. Methodology
@@ -29,7 +29,32 @@ The data used is the NASA CMAPSS (Commercial Modular Aero-Propulsion System Simu
 
 **1. Clone the repository:**
 ```bash
-git clone https://github.com/Atharva-Ramawat/Industrial-IOT-Anomaly-Detection.git
+git clone [https://github.com/Atharva-Ramawat/Industrial-IOT-Anomaly-Detection.git](https://github.com/Atharva-Ramawat/Industrial-IOT-Anomaly-Detection.git)
 cd Industrial-IOT-Anomaly-Detection
+```
 
+**2. Set up the Python 3.11 Virtual Environment:**
+```bash
+py -3.11 -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+```
 
+**3. Train the Model:**
+*(Ensure your NASA data text files are placed in the `data/` folder first)*
+```bash
+python src/train.py
+```
+
+**4. Run Predictions & Visualize Anomalies:**
+```bash
+python src/predict.py
+```
+
+## 🔮 7. Future Work & Next Steps
+While the current LSTM Autoencoder successfully identifies engine degradation, this project can be expanded into a full-scale production system through the following enhancements:
+
+* **Real-Time IoT Simulation:** Implement Apache Kafka or a continuous Python generator to stream the test dataset sequentially, simulating a live factory floor environment.
+* **API Deployment:** Wrap the inference script (`predict.py`) inside a **FastAPI** application to allow external systems to send batches of sensor data and receive JSON responses flagging potential anomalies.
+* **Remaining Useful Life (RUL) Prediction:** Transition from a purely unsupervised anomaly detection approach to a supervised regression model that calculates exactly *how many cycles* remain before engine failure using the `RUL_FD001.txt` ground truth data.
+* **Interactive Dashboarding:** Build a **Streamlit** frontend to visualize the live streaming sensor data and dynamic reconstruction error graphs for non-technical stakeholders.
