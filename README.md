@@ -29,5 +29,7 @@ The data used is the NASA CMAPSS (Commercial Modular Aero-Propulsion System Simu
 
 **1. Clone the repository:**
 ```bash
-git clone [https://github.com/Atharva-Ramawat/Industrial-IOT-Anomaly-Detection.git](https://github.com/Atharva-Ramawat/Industrial-IOT-Anomaly-Detection.git)
+git clone https://github.com/Atharva-Ramawat/Industrial-IOT-Anomaly-Detection.git
 cd Industrial-IOT-Anomaly-Detection
+
+
