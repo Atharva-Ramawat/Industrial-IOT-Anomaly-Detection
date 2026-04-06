@@ -13,3 +13,6 @@ __pycache__/
 # Ignore virtual environments (if you use one)
 venv/
 env/
+
+models/
+*.keras
