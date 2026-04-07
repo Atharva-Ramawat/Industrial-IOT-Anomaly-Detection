@@ -17,7 +17,6 @@ def main():
     test_df = load_data('data/test_FD001.txt')
     
     # 2. Clean Data (Drop flatline sensors)
-    # Note: Make sure your data_loader.py returns the cleaned dataframes!
     train_df, test_df = drop_flatline_sensors(train_df, test_df)
     
     # Define which columns are actual sensor features (ignoring unit_number, time_cycles, etc.)

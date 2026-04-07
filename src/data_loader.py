@@ -23,14 +23,14 @@ def drop_flatline_sensors(train_df, test_df):
     train_df = train_df.drop(columns=drop_cols)
     test_df = test_df.drop(columns=drop_cols)
     
-    # EXACTLY TWO items returned here!
+    # EXACTLY TWO items returned here
     return train_df, test_df
 
 def scale_data(train_df, test_df, feature_cols):
     """Scales data between 0 and 1 so neural networks train faster."""
     scaler = MinMaxScaler()
     
-    # IMPORTANT: We only 'fit' the scaler on training data to prevent data leakage!
+    # We only 'fit' the scaler on training data to prevent data leakage!
     train_df[feature_cols] = scaler.fit_transform(train_df[feature_cols])
     test_df[feature_cols] = scaler.transform(test_df[feature_cols])
     

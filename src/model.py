@@ -27,7 +27,7 @@ def build_lstm_autoencoder(sequence_length, num_features):
     
     # We use Mean Squared Error (MSE) to measure how badly the model reconstructs the data.
     # High MSE = Anomaly!
-    model.compile(optimizer='adam', loss='mse')
+    
     
     return model
 
