@@ -11,6 +11,7 @@ def load_data(file_path):
     df = pd.read_csv(file_path, sep='\s+', header=None, names=COLUMNS)
     return df
 
+
 def drop_flatline_sensors(train_df, test_df):
     """Removes sensors that provide no useful information (variance = 0)."""
     # Find sensors that have exactly 1 unique value across the whole dataset
