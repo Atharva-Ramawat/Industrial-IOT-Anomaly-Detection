@@ -15,7 +15,7 @@ This project applies Deep Learning anomaly detection techniques to time-series t
 
 The solution relies on training an **LSTM Autoencoder** exclusively on "healthy" engine data to establish a baseline of normal operation. The Long Short-Term Memory (LSTM) network is specifically used to capture the complex temporal dependencies and sequential patterns in the sensor data. 
 
-When the trained model i fed data from a degrading engine, it fails to reconstruct the new, erratic patterns. This causes the Reconstruction Error (Mean Squared Error) to spike, effectively acting as an early warning system for total system failure.
+When the trained model is  fed data from a degrading engine, it fails to reconstruct the new, erratic patterns. This causes the Reconstruction Error (Mean Squared Error) to spike, effectively acting as an early warning system for total system failure.
 
 ## 📊 4. Results
 The model successfully identifies engine degradation cycles before catastrophic failure. The graph below plots the Mean Squared Error (MSE) against the sequence time. When the blue line crosses the red threshold, an anomaly is flagged.
